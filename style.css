@@ -229,9 +229,25 @@ form input::placeholder{
 }
 
 .star-checked {
-    color: yellow ;
+    color: #ffc21a ;
 }
 
 .star-unchecked{
     color: blanchedalmond;
+}
+
+.place-new-order-btn{
+    width: 300px;
+    padding: 1em;
+
+    background-color: #f1356d;
+    color: blanchedalmond;
+    
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Cabin Sketch', sans-serif;
+
+    border: 1px solid blanchedalmond;
+    border-radius: 25px;
+    cursor: pointer;
 }

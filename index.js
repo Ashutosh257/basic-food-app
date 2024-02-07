@@ -124,6 +124,8 @@ document.addEventListener('click', (e) => {
     }else if(e.target.dataset.rating){
         const userRating = Number(e.target.dataset.rating)
         renderRatingStars(userRating)   
+    }else if(e.target.id === "new-order-page"){
+        window.location.reload()
     }
     
 
