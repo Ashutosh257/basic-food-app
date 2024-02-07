@@ -1,0 +1,237 @@
+
+body {
+    max-width: 600px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+
+    font-family: 'Cabin Sketch', sans-serif;
+    box-sizing: border-box;
+
+    color: whitesmoke;
+    background-color: #0d1b2a;
+    border: 2px solid #f1356d;
+    border-radius: 25px;
+}
+
+
+header{
+    height: 150px;
+    background-image: url('./assets/logo.png') ;
+    background-repeat: no-repeat; 
+    color: white;
+    border-radius: 25px;
+
+    border: 3px solid #fff;
+}
+
+h2, h5 {
+    margin: 0;
+}
+
+section{
+    margin-bottom: 2em;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5em 0.5em 0;
+}
+
+.sub-title{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0.5em 1em;
+}
+
+main{
+    position: relative;
+    /* border: 1px solid #f1356d; */
+}
+
+.menu-content{
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-image{
+    font-size: 5rem;
+}
+
+.add-btn{
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #f1356d;
+    cursor: pointer;
+
+}
+
+.add-btn:hover{
+    filter: drop-shadow(0px 0px 50px #f89ab6);
+}
+
+.hide{
+    display: none;
+}
+
+.payment-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 1em 0;
+    margin: 2em auto;
+    width: 500px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #0d1b2a;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+form input{
+    width: 300px;
+    padding: 1em;
+    border: 1px solid #f1356d;
+    border-radius: 5px;
+
+    background-color: #0d1b2a;
+    color: #fff;
+    outline: #f1356d;
+}
+
+form input::placeholder{
+    color: #fff;
+}
+
+.pay-btn{
+    width: 300px;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+
+    background-color: #f1356d;
+    color: white;
+    
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    
+    font-size: 1.25rem;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.order{
+    text-align: center;
+}
+
+.separator{
+    margin: 1em 0;
+    border-bottom: 1px solid #f1356d;
+}
+
+.item{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-content{
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+}
+
+.item-price{
+    font-size: 1.25rem;
+}
+
+.remove-btn{
+    border: none;
+    background-color: transparent;
+    color: #f1356d;
+    font-size: 0.625rem;
+    cursor: pointer;
+}
+
+.remove-btn:hover{
+    text-decoration: underline;
+}
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+
+.complete-order-btn{
+    width: 300px;
+    padding: 1em;
+
+    background-color: #f1356d;
+    color: white;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Cabin Sketch', sans-serif;
+
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+
+.order-status{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #f1356d;
+    color: blanchedalmond;
+}
+
+.order-status-text{
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 1em 0;
+}
+
+/* star rating */
+.rating{
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.star-checked {
+    color: yellow ;
+}
+
+.star-unchecked{
+    color: blanchedalmond;
+}

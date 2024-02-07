@@ -1,0 +1,116 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Cabin Sketch - Google Font CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome CDN -->
+        <script src="https://kit.fontawesome.com/6abdeda75c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <header>
+
+                <h2 class="title">Jimmy's Diner</h2>
+                <h5 class="sub-title">The best burgers and pizzas in town.</h5>
+
+        </header>
+
+        <main>
+            <section class="menu" id="menu">
+            </section>
+
+            <section class="order hide" id="order" >
+
+                <h2>Your Order</h2>
+                <div class="order-list" id="order-list">
+                    
+                </div>
+
+                <div class="separator"></div>
+                <div  id="total-price">
+                    <h3 class="total-price">
+                        <span id="price-paid-text">
+                            Total Price: 
+                        </span> 
+                        <span id="total-amount">$ 0</span>
+                    </h3>
+                </div>
+
+                <button class="complete-order-btn" id="complete-order-btn">
+                    Complete Order
+                </button>
+            </section>
+
+            <section class="payment-modal hide" id="payment-modal">
+                <h2 style="margin: 1em 0;">Enter your card details</h2>
+                <form id="payment-form">
+                    <label for="username"></label>
+                    <input 
+                    type="text" 
+                    id="username"
+                    name="username"
+                    placeholder="Enter your name"
+                    autocomplete="off"
+                    pattern="[A-Za-z ]{3,}"
+                    required
+                    >
+                    
+                    <label for="cardNumber"></label>
+                    <input 
+                    type="text" 
+                    id="card-number"
+                    name="cardNumber"
+                    placeholder="Enter Card Number"
+                    autocomplete="off"
+                    pattern="[0-9]{16}"
+                    required
+                    >
+                    
+                    <label for="cvv"></label>
+                    <input 
+                    type="password" 
+                    id="cvv"
+                    name="cvv"
+                    minlength="3"
+                    maxlength="3"
+                    placeholder="Enter CVV"
+                    autocomplete="off"
+                    pattern="[0-9]{3}"
+                    required
+                    >
+
+                    <button type="submit" class="pay-btn" id="pay-btn">Pay 🤑</button>
+                </form>
+            </section>
+
+            <section class="order-status hide" id="order-status">
+                <h2>Order Status</h2>
+                <p class="order-status-text">
+                    Thanks 
+                    <span id="user-name-order-status">
+                        Guest! 
+                    </span> 
+                    Your order has been placed successfully. <br>
+                    It will be delivered to you in 30 minutes.</p>
+
+                <div class="user-rating">
+                    <h3>Rate our service</h3>
+                    <div class="rating" id="rating">
+                    </div>
+                    <!-- <button class="submit-rating-btn" id="submit-rating-btn">Submit</button> -->
+                </div>
+            </section>
+        </main>
+
+
+
+	<script src="index.js" type="module">
+    </script>
+    </body>
+</html>
+
