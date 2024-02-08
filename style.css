@@ -14,7 +14,6 @@ body {
     border-radius: 25px;
 }
 
-
 header{
     height: 150px;
     background-image: url('./assets/logo.png') ;
@@ -250,4 +249,13 @@ form input::placeholder{
     border: 1px solid blanchedalmond;
     border-radius: 25px;
     cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    margin-top: 4em;
+}
+
+footer a{
+    color: #fff;
 }
